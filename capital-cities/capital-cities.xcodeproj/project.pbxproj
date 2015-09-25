@@ -12,6 +12,8 @@
 		16890C541BB58C3000007A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16890C521BB58C3000007A88 /* Main.storyboard */; };
 		16890C561BB58C3000007A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16890C551BB58C3000007A88 /* Assets.xcassets */; };
 		16890C591BB58C3000007A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16890C571BB58C3000007A88 /* LaunchScreen.storyboard */; };
+		16890C611BB58CD600007A88 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16890C601BB58CD600007A88 /* MapKit.framework */; };
+		16890C631BB58F7B00007A88 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16890C621BB58F7B00007A88 /* Capital.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		16890C551BB58C3000007A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16890C581BB58C3000007A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16890C5A1BB58C3000007A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16890C601BB58CD600007A88 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		16890C621BB58F7B00007A88 /* Capital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16890C611BB58CD600007A88 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		16890C421BB58C3000007A88 = {
 			isa = PBXGroup;
 			children = (
+				16890C601BB58CD600007A88 /* MapKit.framework */,
 				16890C4D1BB58C3000007A88 /* capital-cities */,
 				16890C4C1BB58C3000007A88 /* Products */,
 			);
@@ -60,6 +66,7 @@
 				16890C551BB58C3000007A88 /* Assets.xcassets */,
 				16890C571BB58C3000007A88 /* LaunchScreen.storyboard */,
 				16890C5A1BB58C3000007A88 /* Info.plist */,
+				16890C621BB58F7B00007A88 /* Capital.swift */,
 			);
 			path = "capital-cities";
 			sourceTree = "<group>";
@@ -95,6 +102,11 @@
 				TargetAttributes = {
 					16890C4A1BB58C3000007A88 = {
 						CreatedOnToolsVersion = 7.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,6 +148,7 @@
 			files = (
 				16890C511BB58C3000007A88 /* ViewController.swift in Sources */,
 				16890C4F1BB58C3000007A88 /* AppDelegate.swift in Sources */,
+				16890C631BB58F7B00007A88 /* Capital.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
